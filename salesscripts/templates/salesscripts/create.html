@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<br/>
+<br/>
+<div align="center" >This is your Sales Script Template. Start modifying it.</div>.
+<hr>
+<br/>
+<br/>
+
+
+<form method="POST" action="{% url 'create' %}" >
+    {%csrf_token%}
+<div class="container">
+     <h4 align="center" >Enter cool Sales Script Title: <input type="text" placeholder=" Super Power Sales Script " name="scripttitleone"/></h4>
+<br/><br/>
+
+<h3 align="center" >STEP 1:- INTRODUCTION</h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+Hello <INPUT type="text" placeholder =" Sir, Friends, Mr. X " name="salutationone"/>
+
+    , <INPUT type="text" width= "1000" placeholder=" I hope you are fine. " name="greetingsone"/>. <br/><br/>
+
+This is <INPUT type="text" width= "1000" placeholder=" Your name " name="usernameone"/>
+
+     from <INPUT type="text" width= "1000" placeholder=" Your company name " name="companynameone"/>. <br/><br/>
+
+Today I am going to tell you <br/><textarea rows = "5" cols = "70" name = "problemstatementone">Problem statement + Time period
+Example: Today I am going to tell you how you can defeat negativity and self doubts in less than 20 minutes.</textarea>
+
+    <br/><br/><br/><br/>
+
+    <h3 align="center" >STEP 2: GIVE LITTLE BACKGROUND STORY TO BUILD CURIOUSITY</h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+    <textarea rows = "5" cols = "100" name = "backstorytwo">Example: Few days back an idea crawled out of my brain and hit me in the head and I ended up thinking, man, this is really really awesome.
+         </textarea>
+
+
+
+
+    <br/><br/><br/><br/>
+
+
+<h3 align="center"> STEP 3: QUALIFYING THE AUDIENCE: </h3><p align="center"><br/>To make customers feel this product is their need.</p>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+    So before I tell you more about <INPUT type="text" placeholder =" product name " name="productnamethree"/>
+
+    ,
+<br/>see if couple of questions make sense to you.
+<textarea rows = "5" cols = "100" name = "qualifierquestionsthree">Ask questions whose obvious answers would be yes
+For Example:
+Would you like to discover sure shot formula for unshakable confidence?
+Would you like to uncover step by step process to deal with negativity?
+Would you like to defeat self doubts for self mastery?
+</textarea>
+<br/>
+<br/>
+If answers to all these questions are yes then this is perfect fit for you.
+
+<br/><br/><br/><br/>
+<h3 align="center">STEP 4:  PRODUCT PRESENTATION </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+<textarea rows = "20" cols = "100" name = "productpresentationfour">Example:
+I am talking about Certainty Mindset: This is #1 Manifestation formula. 
+ 
+Let me tell you a secret. Many of us think that situations are super powerful. We cannot control them, we cannot rise above them.
+
+But do successful people think that way? No they don’t. Successful people are 100% convinced that they are the masters of their own destiny. They are not creatures of circumstance but they are creator of them. 
+
+See, doubts, fears, limiting beliefs, stress, are all our inner enemies. But We seek answers outside. 
+ 
+When I will get promotion, when I will lose weight, when I will earn money… when I will do something…. So and so more… And most of the time nothing happens. 
+ 
+Certainty mindset is the only way to train your mind to take control of the situation. Instead of being victim, certainty mindset helps us rise above the situation and keep it under control. It helps us to stay 100% motivated and to be certain of end results. 
+
+Certainty mindset is the medium through which we can achieve ultimate creativity.
+</textarea>
+
+
+<br/><br/><br/><br/>
+<h3 align="center">STEP 5:  ASK QUESTIONS TO MAINTAIN RAPPORT </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+<textarea rows = "5" cols = "100" name = "rapportquestionfive">Example:
+Imagine you being absolutely certain about your final result and you are building that unshakable attitude to defeat your self doubts and negativity, will you be successful?
+</textarea>
+<br/>
+Yes, right?
+
+    <br/><br/><br/><br/>
+<h3 align="center"> STEP 6: ADDRESS CUSTOMER'S OBVIOUS DOUBTS UPFRONT </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+
+Now! You might ask
+<textarea rows = "6" cols = "100" name = "customerdoubtssix">Customer's obvious doubts
+Example: does it really work? I never heard of certainty mindset ever before.
+</textarea><br/>
+<br/>
+And you are right in asking that question.
+So let me take this moment to answer your doubts.
+<br/><br/>
+
+<textarea rows = "6" cols = "100" name = "answertocustomersix">Address customer's doubt
+</textarea>
+
+    <br/><br/><br/><br/>
+<h3 align="center"> STEP 7: STATE THE PAIN POINT </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+<INPUT type="text" width= "1000" placeholder="Product name" name="productnameseven"/> will help you <INPUT type="text" size="50" width= "1000" placeholder=" state the pain point + Time period " name="painpointseven"/>
+   .
+
+    <br/><br/><br/><br/>
+<h3 align="center"> STEP 8: PICTURE THE IDEAL STATE WHRE CUSTOMER HAD USED YOUR PRODUCT AND
+PROBLEM DOESN’T EXIST </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+<textarea rows = "6" cols = "100" name = "productidealstateeight">
+</textarea>
+
+
+
+
+ <br/><br/><br/><br/>
+<h3 align="center"> STEP 9: INACTION RESULT </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+But what will happen if you don’t resolve <INPUT type="text" width= "1000" placeholder=" problem statement " name="problemstatementnine"/>
+? Where do you see yourself a year from now? Or worse five years from now? We all know that problem like this typically doesn’t resolve unless you take serious action to resolve them.
+
+      <br/><br/><br/><br/>
+<h3 align="center"> STEP 10: REPEAT THE PRODUCT PRESENTATION LITTLE BIT DIFFERENTLY BEFORE CLOSING </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+Now let me tell you about
+<textarea rows = "20" cols = "100" name = "productdescriptionelevan">
+Certainty Mastery Blueprint is #1 training which will help you to tap into the potential of your inner self.
+ 
+Do you want to feel like you are on the top of the world?
+Do you want to discover your hidden potential?
+Do you want to uncover the secret to unshakable confidence?
+Do you want to overcome fear of failure?
+ 
+If answer to all these questions are yes, then I am sharing my power packed “Certainty Mastery Blueprint" with you.
+
+Question 1: Would you like to discover sure shot formula for unshakable confidence?
+Question 2: Would you like to uncover step by step process to deal with negativity? 
+Question 3: Would you like to defeat self doubts for self mastery?
+
+
+If you want to dip your fingers & experience in this powerful process click the link below and jump in.
+
+</textarea>
+
+        <br/><br/><br/><br/>
+<h3 align="center"> STEP 12: ASKING FOR ORDER </h3>
+    <hr width= 50% ><hr width= 50% >
+    <br/><br/>
+
+<INPUT type="text" size="50" width= "1000" placeholder=" Product name " name="productnametwelve"/> is
+<INPUT type="text" size="50" width= "1000" placeholder=" what does it best do? " name="whatdoesitdotwelve"/>.
+<br/>
+<i>example: Visualisation blueprint is 7 step video training series that will teach you how to use "meaningful visualisation" to build certainty mindset for manifestation. 
+</i><br/> <br/>
+Buy it NOW @ <INPUT type="text" width= "1000" placeholder=" price " name="pricetwelve"/>. Click the link below and get ready to fire up. 
+ 
+<br/>
+<br/>
+<br/>
+<input align="center" class=" container btn btn-primary " width=70% type="submit" value=" Create My Script! " >
+    <br/>
+<br/>
+<br/><br/>
+<br/>
+<br/>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

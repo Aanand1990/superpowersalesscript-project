@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{%block content%}
+<br/>
+<br/>
+<h1 class="container" align="center"> Welcome {{ user.get_username }} to dashboard  </h1>
+<div class="container">
+    {%load static%}
+
+
+    <div class="container" align="center">
+   <a class="container" href="{% url 'create' %}">
+   <br/>
+   <br/>
+        <span class="oi oi-plus"></span>
+        <p>Create Your Sales Script Here!</p>
+        <hr>
+    </a>
+        <h5>Your Previous Sales Scripts</h5>
+        {%if scriptlist%}
+            {% for script in scriptlist %}
+            <a href="{{script.id}}">{{script}}</a> <br/>
+            {% endfor %}
+        {%else%}
+            <p> You do not have any scripts. Create one. </p>
+        {%endif%}
+
+
+
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    </div>
+
+</div>
+
+{%endblock%}
+

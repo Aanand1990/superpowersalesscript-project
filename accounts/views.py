@@ -12,7 +12,7 @@ def signup(request):
             except User.DoesNotExist:
                 user = User.objects.create_user(request.POST['username'], email = request.POST['useremail'], password = request.POST['password1'])
                 auth.login(request,user)
-                return redirect('home')
+                return redirect('dashboard')
         else:
             return render(request, 'accounts/signup.html', {'error': 'Password must match'})
 
@@ -27,7 +27,7 @@ def login(request):
         user = auth.authenticate(username = request.POST['username'], password = request.POST['password1'])
         if user is not None:
             auth.login(request,user)
-            return redirect('home')
+            return redirect('dashboard')
         else:
             return render(request, 'accounts/login.html', {'error': 'Username or password incorrect'})
 
@@ -40,3 +40,9 @@ def logout(request):
     if request.method == 'POST':
         auth.logout(request)
         return redirect('home')
+
+def terms(request):
+    return render(request, 'accounts/terms.html')
+
+def privacy(request):
+    return render(request, 'accounts/privacy.html')
