@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name 161.35.57.105;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/djangodeploy/superpowersalesscript-project;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/djangodeploy/superpowersalesscript-project/superpowersalesscript.sock;
+    }
+}
